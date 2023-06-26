@@ -1,0 +1,21 @@
+:root{
+    --dark-orange: #F33B07;
+    --light-orange: #FC5F13;
+    --blue: #12E1FF;
+    --off-white: #FFEADE;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+h1{
+    color: black;
+    font-size: 4rem;
+    font-family: 'Commissioner', poppins;
+    font-weight: 700;
+    line-height: 5rem;
+}
