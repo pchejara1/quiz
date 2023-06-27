@@ -2,20 +2,81 @@
     --dark-orange: #F33B07;
     --light-orange: #FC5F13;
     --blue: #12E1FF;
+    --white: #fff;
     --off-white: #FFEADE;
+    --grey: #333;
 }
 
 body{
     padding: 0;
     margin: 0;
+    margin: auto;
+    font-family: 'Commissioner', poppins;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 h1{
-    color: black;
     font-size: 4rem;
     font-family: 'Commissioner', poppins;
     font-weight: 700;
     line-height: 5rem;
+}
+h3{
+    font-size: 2rem;
+    font-family: Commissioner;
+    font-weight: 700;
+    line-height: 5rem;
+}
+h4{
+    font-size: 1.5rem;
+    font-family: Commissioner;
+    font-weight: 700;
+    line-height: 5rem;
+}
+h5{
+    font-size: 1rem;
+    font-family: Commissioner;
+    font-weight: 700;
+    line-height: 0.875rem;
+}
+p{
+font-size: 1.5rem;
+font-family: Commissioner;
+line-height: 2rem;
+}
+.pad-3{
+    padding: 3px 0;
+}
+.pad-5{
+    padding: 5px 0;
+}
+.pad-10{
+    padding: 10px 0;
+}
+.pad-15{
+    padding: 15px 0;
+}
+.pad-20{
+    padding: 20px 0;
+}
+.pad-25{
+    padding: 25px 0;
+}
+.pad-30{
+    padding: 30px 0;
+}
+.pad-40{
+    padding: 40px 0;
+}
+.pad-50{
+    padding: 50px 0;
+}
+.pad-60{
+    padding: 60px 0;
+}
+
+
+.img{
+    width: 100%;
 }

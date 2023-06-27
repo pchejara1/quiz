@@ -1,0 +1,112 @@
+
+
+*{
+    /* border: 1px solid grey; */
+}
+/* header design  */
+.header-section{
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.nav-menu-wrap{
+    align-items: center;
+    margin: auto;
+}
+.nav-menu{
+    list-style-type: none;
+    display: flex;
+    margin: auto 0;
+    align-items: center;
+    justify-content: end;
+}
+.nav-menu li{
+    margin: 10px;
+    color: var(--grey);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.line-seperator{
+    padding: 23px 0;
+    border-left: 2px solid var(--dark-orange);
+}
+.btn-wrap{
+    display: flex;
+    justify-content: space-around;
+    margin: auto 0;
+}
+.btn{
+    border-radius: 4px;
+    padding: 14px 17px;
+    border: 1px solid var(--dark-orange);
+}
+.signup-btn{
+    color: var(--white);
+    background: var(--dark-orange);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.signup-btn:hover{
+    background: var(--white);
+    color: var(--dark-orange);
+    border: 1px solid var(--dark-orange);
+}
+.signin-btn{
+    color: var(--dark-orange);
+    background: var(--white);
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.signin-btn:hover{
+    background: var(--dark-orange);
+    color: var(--white);
+    border: 1px solid var(--dark-orange);
+}
+
+/* hero section design  */
+.hero-section{
+    background: linear-gradient(215deg, #FF8462 0%, #F85E0D 100%);
+    padding: 4rem 8.4rem 0rem 8.4rem;
+    display: flex;
+}
+.hero-title{
+    color: var(--white);
+}
+.header-description{
+    color: #FFF;
+}
+.join-btn{
+    padding: 15px 1.8rem;
+    border-radius: 4px;
+    background: var(--grey);
+    width: fit-content;
+    color: #F6F6F6;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.wrapppper{
+    width: fit-content;
+}
+.extra-description{
+    color: #FFF;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.head-number{
+    color: var(--white);
+    display: flex;
+    justify-content: space-around;
+}
+.category-section{
+    padding: 2rem 8.4rem;
+}
+.category-section h1{
+    color: var(--light-orange);
+}
+.explore-btn{
+    
+}
