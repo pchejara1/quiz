@@ -1,0 +1,13 @@
+*{
+    border: 1px solid red;
+}
+.left-container{
+    background-color: var(--light-orange);
+}
+.left-container, .right-container{
+    height: 100vh;
+    position: sticky;
+}
+.middle-content-container{
+    overflow: scroll;
+}
