@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Point Table - Quiz</title>
+    <meta name="description" content="Quiz">
+    <meta name="keywords" content="Quiz">
+
+    <!-- Favicons -->
+    <link href="assets/images/common/favicon.png" rel="icon">
+    <link href="assets/images/common/favicon.png" rel="apple-touch-icon">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+    <!--  Main CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="assets/css/dashboard.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="mobileNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <div class="left-container ">
+                <div class="pad-20"></div>
+                <div class="logo-container">
+                    <a href="index.html"><img src="assets/images/common/logo.png" alt="logo"></a>
+                </div>
+                <div class="pad-20"></div>
+                <div class="menu-item-container">
+                    <ul class="item-menu">
+                        <li><a href="dashboard.html">
+                                <img src="assets/images/icons/home.svg" alt="">&ensp; Dashboard
+                            </a>
+                        </li>
+                        <li><a href="rewards.html">
+                                <img src="assets/images/icons/rewards.svg" alt="">&ensp; Rewards
+                            </a>
+                        </li>
+                        <li><a href="instructions.html">
+                                <img src="assets/images/icons/quiz.svg" alt="">&ensp; Quiz
+                            </a>
+                        </li>
+                        <li class="active"><a href="point-table.html">
+                                <img src="assets/images/icons/points-b.svg" alt="">&ensp; Points table
+                            </a>
+                        </li>
+                        <li><a href="subscription.html">
+                                <img src="assets/images/icons/subscription.svg" alt="">&ensp; Subscription
+                            </a>
+                        </li>
+                        <li><a href="favorites.html">
+                                <img src="assets/images/icons/star.svg" alt="">&ensp; My Favorites
+                            </a>
+                        </li>
+                        <li><a href="profile.html">
+                                <img src="assets/images/icons/profile.svg" alt="">&ensp; Profile
+                            </a>
+                        </li>
+                        <li><a href="change-password.html">
+                                <img src="assets/images/icons/fingerprint.svg" alt="">&ensp; Change password
+                            </a>
+                        </li>
+                        <li><a href="contact.html">
+                                <img src="assets/images/icons/contact.svg" alt="">&ensp; Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pad-10"></div>
+                <div class="logout-item-container">
+                    <ul class="item-menu">
+                        <li><a data-bs-toggle="modal" data-bs-target="#logout-confirmation" href="">
+                                <img src="assets/images/icons/logout.svg" alt="">&ensp; Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pad-30"></div>
+                <div class="copyright-container">
+                    <p>Copyrights @2023 GQuiz. Pvt. Ltd</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="mobileProfile" class="poverlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeProfile()">&times;</a>
+        <div class="poverlay-content">
+            <div class="right-container">
+                <h4>My Profile</h4>
+                <div class="profile-container">
+                    <img class="profile-img" src="assets/images/dashboard/profile-img.png" alt="">
+                    <h4 class="profile-name">Saara Mariam</h4>
+                </div>
+                <div class="point-table-container">
+                    <p class="table-title">Your Point Table</p>
+                    <div class="table-row">
+                        <h5>Total Points</h5>
+                        <h6>150</h6>
+                    </div>
+                    <div class="table-row">
+                        <h5>No. of Questions</h5>
+                        <h6>20</h6>
+                    </div>
+                    <div class="table-row">
+                        <h5>Total Time</h5>
+                        <h6>00:01:16</h6>
+                    </div>
+                </div>
+                <div class="lolo-container">
+                    <img src="assets/images/common/lolo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row hide-desktop mobile-nav-container">
+        <img src="assets/images/icons/menu.svg" class="hide-desktop nav-icon" onclick="openNav()">
+        <img class="hide-desktop profile-icon" src="assets/images/icons/profile-b.svg" onclick="openProfile()" />
+    </div>
+
+    <section class="outer-structure">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 left-container hide-mobile">
+                    <div class="logo-container">
+                        <a href="index.html"><img src="assets/images/common/logo.png" alt="logo"></a>
+                    </div>
+                    <div class="pad-20"></div>
+                    <div class="menu-item-container">
+                        <ul class="item-menu">
+                            <li><a href="dashboard.html">
+                                    <img src="assets/images/icons/home.svg" alt="">&ensp; Dashboard
+                                </a>
+                            </li>
+                            <li><a href="rewards.html">
+                                    <img src="assets/images/icons/rewards.svg" alt="">&ensp; Rewards
+                                </a>
+                            </li>
+                            <li><a href="instructions.html">
+                                    <img src="assets/images/icons/quiz.svg" alt="">&ensp; Quiz
+                                </a>
+                            </li>
+                            <li class="active"><a href="point-table.html">
+                                    <img src="assets/images/icons/points-b.svg" alt="">&ensp; Points table
+                                </a>
+                            </li>
+                            <li><a href="subscription.html">
+                                    <img src="assets/images/icons/subscription.svg" alt="">&ensp; Subscription
+                                </a>
+                            </li>
+                            <li><a href="favorites.html">
+                                    <img src="assets/images/icons/star.svg" alt="">&ensp; My Favorites
+                                </a>
+                            </li>
+                            <li><a href="profile.html">
+                                    <img src="assets/images/icons/profile.svg" alt="">&ensp; Profile
+                                </a>
+                            </li>
+                            <li><a href="change-password.html">
+                                    <img src="assets/images/icons/fingerprint.svg" alt="">&ensp; Change password
+                                </a>
+                            </li>
+                            <li><a href="contact.html">
+                                    <img src="assets/images/icons/contact.svg" alt="">&ensp; Contact Us
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pad-10"></div>
+                    <div class="logout-item-container">
+                        <ul class="item-menu">
+                            <li><a data-bs-toggle="modal" data-bs-target="#logout-confirmation" href="">
+                                    <img src="assets/images/icons/logout.svg" alt="">&ensp; Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pad-30"></div>
+                    <div class="copyright-container">
+                        <p>Copyrights @2023 GQuiz. Pvt. Ltd</p>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 middle-content-container">
+                    <div class="breadcrumb-section breadcrumb-points-section">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb points">
+                                <li class="breadcrumb-item"><a href="dashboard.html">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Points Table</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="pad-20"></div>
+                    <div class="title-container">
+                        <h2>My Points Table</h2>
+                    </div>
+                    <div class="point-container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12">
+                                <div class="pointer-card">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h4>Total Points</h4>
+                                            <h4 class="pointer-data">150</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            The overall Points You Have Scored During the Participation
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="pointer-card">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h4>Questions Attempted</h4>
+                                            <h4 class="pointer-data">20</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            Questions That are taken Up
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="pointer-card">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h4>Time Taken</h4>
+                                            <h4 class="pointer-data">00:01:25</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            Total Time Taken During the Quiz
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="pointer-card">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h4>Test Taken</h4>
+                                            <h4 class="pointer-data">10</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            For Every 1 Correct Question you Get 5 Points (1*5= 5)
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="pointer-card">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h4>Correct Answers</h4>
+                                            <h4 class="pointer-data">16</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            Number of Correct Answers from your Quiz
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12">
+                                <div class="pointer-card">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6">
+                                            <h4>Wong Answers</h4>
+                                            <h4 class="pointer-data">24</h4>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6">
+                                            Number of Wrong Answers from your Quiz
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="col-lg-2 right-container hide-mobile">
+                    <h4>My Profile</h4>
+                    <div class="profile-container">
+                        <img class="profile-img" src="assets/images/dashboard/profile-img.png" alt="">
+                        <h4 class="profile-name">Saara Mariam</h4>
+                    </div>
+                    <div class="point-table-container">
+                        <p class="table-title">Your Point Table</p>
+                        <div class="table-row">
+                            <h5>Total Points</h5>
+                            <h6>150</h6>
+                        </div>
+                        <div class="table-row">
+                            <h5>No. of Questions</h5>
+                            <h6>20</h6>
+                        </div>
+                        <div class="table-row">
+                            <h5>Total Time</h5>
+                            <h6>00:01:16</h6>
+                        </div>
+                    </div>
+                    <div class="lolo-container">
+                        <img src="assets/images/common/lolo.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Logout Modal -->
+    <div class="modal fade logout-pop" id="logout-confirmation" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <img src="assets/images/common/logout-lolo.png" alt="">
+                <h4>Are You Sure You Want to Logout?</h4>
+                <div class="">
+                    <button type="button" class="btn sign-btn" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn sign-btn light"
+                        onclick="javascript:window.location.href='index.html'">Yes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--  JS Files -->
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

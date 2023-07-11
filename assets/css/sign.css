@@ -1,0 +1,179 @@
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--light-orange);
+    box-shadow: none;
+}
+
+.form-control,
+.form-select {
+    border-color: #6C757D;
+    border-radius: 4px;
+}
+
+/* .register-section{
+    min-height: 100vh;
+} */
+
+.left-register-page {
+    background: var(--light-orange);
+    padding: 2rem;
+    /* height: 100vh; */
+}
+
+.right-register-page {
+    background-color: var(--white);
+    padding: 0;
+    margin: auto;
+}
+
+.sign-card {
+    /* margin: 10vh 60% 10vh -60%; */
+    /* box-shadow: 0 0 10px #848484; */
+    padding: 2rem;
+    background-color: var(--off-white);
+    /* border-radius: 0.6rem; */
+}
+
+.sign-card a {
+    color: var(--light-orange);
+    text-decoration: underline;
+}
+
+.card-intro h3 {
+    color: #282828;
+    font-family: Commissioner;
+    font-weight: 500;
+    line-height: 120%;
+}
+
+.card-intro p {
+    font-size: 1rem;
+    font-family: 'Inter';
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+
+    /* width: auto;
+    position: absolute;
+    height: auto;
+    margin: 15% 7%; */
+}
+
+.password-hint,
+.agree-tc {
+    color: #808080;
+    font-size: 0.75rem;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.orange {
+    color: var(--light-orange);
+}
+
+.input[type=checkbox]:checked {
+    background: red !important;
+    background-color: green;
+}
+
+.sign-btn {
+    background: var(--light-orange);
+    border: 1px solid var(--light-orange);
+    color: var(--off-white) !important;
+    border-radius: 3px;
+    font-size: 1.25rem;
+    font-family: Commissioner;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    text-decoration: none !important;
+}
+
+.sign-btn:hover {
+    background: transparent;
+    border: 1px solid var(--light-orange);
+    color: var(--light-orange) !important;
+    text-decoration: none;
+
+}
+
+.otp-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.otp-container input {
+    width: 40px;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .register-section {
+        min-height: 100vh;
+    }
+
+    .left-register-page {
+        min-height: 100vh;
+    }
+
+    .sign-card {
+        margin: 10vh 60% 10vh -60%;
+        box-shadow: 0 0 10px #848484;
+        padding: 2rem;
+        background-color: var(--off-white);
+        border-radius: 0.6rem;
+    }
+
+    .image-container img {
+        width: auto;
+        position: absolute;
+        height: auto;
+        margin: 9% 7%;
+    }
+
+}
+
+/* modal design  */
+.modal-content {
+    border-radius: 0.625rem;
+    background: conic-gradient(from 180deg at 50.22% 50.85%, #12E1FF 0deg, #07B7D0 360deg);
+    padding: 2rem;
+    margin: auto;
+    align-items: center;
+}
+
+.modal-content h4 {
+    text-align: center;
+    /* color: var(--white); */
+}
+
+.modal-content p {
+    text-align: center;
+    color: var(--grey);
+    font-size: 1rem;
+    font-family: Commissioner;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.modal-content .btn {
+    margin: 5px;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}

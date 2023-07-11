@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>OTP Verification - Quiz</title>
+  <meta name="description" content="Quiz">
+  <meta name="keywords" content="Quiz">
+
+  <!-- Favicons -->
+  <link href="assets/images/common/favicon.png" rel="icon">
+  <link href="assets/images/common/favicon.png" rel="apple-touch-icon">
+
+  <!-- Vendor CSS Files -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href="assets/css/sign.css" rel="stylesheet">
+</head>
+
+<body>
+  <section class="register-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 left-register-page">
+          <a href="index.html"><img src="assets/images/common/logo.png" alt="logo"></a>
+          <div class="image-container">
+            <img src="assets/images/sign/otp-verify.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-4 right-register-page">
+          <div class="sign-card">
+            <div class="card-intro text-center">
+              <h3>Verify OTP</h3>
+              <p>Welcome Back! Please Enter Your Details.</p>
+            </div>
+            <form class="login-form-bg">
+              <div class="row mt-3">
+                <label for="" class="form-label">Enter OTP</label>
+                <div class="col-12 otp-container">
+                  <input type="tel" class="form-control" id="" maxlength="1" required="">
+                  <input type="tel" class="form-control" id="" maxlength="1" required="">
+                  <input type="tel" class="form-control" id="" maxlength="1" required="">
+                  <input type="tel" class="form-control" id="" maxlength="1" required="">
+                </div>
+              </div>
+              <div class="d-grid gap-2 py-3">
+                <a class="btn sign-btn" type="button" data-bs-toggle="modal" data-bs-target="#verification-success">
+                  Submit</a>
+              </div>
+              <div class="text-center">
+                <p class="fw-bold orange">0:25</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="verification-success" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <img src="assets/images/common/lolo.png" alt="">
+        <h4>Verified Successfully</h4>
+        <div class="">
+          <button type="button" class="btn sign-btn"
+            onclick="javascript:window.location.href='dashboard.html'">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--  JS Files -->
+  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
